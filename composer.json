@@ -1,0 +1,28 @@
+{
+  "name": "aysnc/composer-env-auth",
+  "description": "Composer plugin that reads authentication credentials from environment variables and .env files",
+  "type": "composer-plugin",
+  "keywords": ["composer", "plugin", "authentication", "environment", "env"],
+  "homepage": "https://github.com/Aysnc-Labs/composer-env-auth",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Aysnc",
+      "email": "info@aysnc.com.au"
+    }
+  ],
+  "require": {
+    "php": "^8.2",
+    "composer-plugin-api": "^2.0",
+    "vlucas/phpdotenv": "^5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Aysnc\\ComposerEnvironmentAuthentication\\": "src/"
+    }
+  },
+  "extra": {
+    "composer-plugin-api-version": "2.0.0",
+    "class": "Aysnc\\ComposerEnvironmentAuthentication\\EnvironmentAuthenticationPlugin"
+  }
+}
